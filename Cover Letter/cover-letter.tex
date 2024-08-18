@@ -27,7 +27,7 @@
 ]{scrlttr2} % Use the KOMA-Script letter class
 
 \usepackage{fontsize} % Allows changing the default font size to an arbitrary value
-\changefontsize[17pt]{12.5pt} % Change the default font size and baselineskip
+\changefontsize[15pt]{12.5pt} % Change the default font size and baselineskip
 \usepackage{anyfontsize} % Allows font sizes at arbitrary values
 
 \setlength{\parindent}{0pt} % Paragraph indentation
@@ -59,23 +59,30 @@
 
 \newkomavar{subtitle}\setkomavar{subtitle}{Computer Science Student} % Set the subtitle line for the first page header, leave empty for no subtitle
 
-\setkomavar{fromaddress}{Linh Trung ward.\\Thu Duc City, Ho Chi Minh} % Your address or location
+\setkomavar{fromaddress}{Linh Trung ward.\\Thu Duc, Ho Chi Minh City, Vietnam} % Your address or location
 \setkomavar{fromphone}{\href{tel:+84327204690}{(+84)32 720 4690}} % Your phone number
 \setkomavar{fromemail}{\href{mailto:mtri0162@gmail.com}{mtri0162@gmail.com}} % Your email address
 
 \setkomavar{place}{} % A city or country that's output before the date automatically, add your location here if you want this
 \setkomavar{date}{\today} % Date output above the letter, use \today for today's date or leave this empty for no date
 
-\setkomavar{subject}{Cover Letter for Software Engineering Internship Position} % Bold text above the letter specifying what it's for, useful for specifying the job you are applying for. Leave this empty for no subject.
+% \setkomavar{subject}{Cover Letter for Software Engineering Internship Position} % Bold text above the letter specifying what it's for, useful for specifying the job you are applying for. Leave this empty for no subject.
 
 % These are not used in this document, uncomment them if you would like to use them and output their values with e.g.: \usekomavar{fromurl}
 %\setkomavar{fromfax}{+1 (123) 456 7890} % Your fax number
 %\setkomavar{fromurl}{https://www.LaTeXTemplates.com} % Your personal website
 
-% \setkomavar{toname}{Dr. Robert Kelso}
-% \setkomavar{toposition}{Chief of Medicine}
-% \setkomavar{tocompany}{Sacred Heart Hospital}
-% \setkomavar{tolocation}{12629 Riverside Drive}
+\newcommand{\TONAME}{[HR'name] }
+\newcommand{\TOPOSITION}{Human Resources Department }
+\newcommand{\TOCOMPANY}{[Company's name] }
+\newcommand{\TOLOCATION}{[Company's location] }
+
+\newcommand{\COMPANYSERVICE}{[Company's service]}
+
+\newcommand{\JOBTITLE}{[job title] }
+\newcommand{\COMPANY}{[Company's name] }
+\newcommand{\JOBBOARD}{\href{https://www.topcv.vn/viec-lam/internship-java-japanese-n4/1350923.html?ta_source=JobListInNormalCompany_LinkDetail}{[Link to job board]} }
+\newcommand{\MYFIELD}{Software Engineering}
 
 %------------------------------------------------
 
@@ -107,24 +114,26 @@
 
 \begin{letter}{
 	% Name and address of the person to whom the letter is being sent
-        % \usekomavar{toname} \\
-	Dr. Robert Kelso \\
-	Chief of Medicine \\
-	Sacred Heart Hospital \\
-	12629 Riverside Drive \\
-	North Hollywood, L.A. 91607
-        % \usekomavar{toposition} \\
-        % \usekomavar{tocompany} \\
-        % \usekomavar{tolocation}
+	% Dr. Robert Kelso \\
+	% Chief of Medicine \\
+	% Sacred Heart Hospital \\
+	% 12629 Riverside Drive \\
+	% North Hollywood, L.A. 91607	
+	\TONAME \\
+	\TOPOSITION \\
+	\TOCOMPANY \\
+	\TOLOCATION
 }
 
-\opening{Dear Dr. Kelso,}
+\opening{Dear \TONAME,}
 
-PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening.
+I am writing to express my interest in the \JOBTITLE position at \COMPANY, as advertised on \JOBBOARD. With my background in \MYFIELD, I am excited about the opportunity to contribute to your team.
 
-PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services -- above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life.
+I am deeply interested in the \JOBTITLE position at \COMPANY due to my admiration for your innovative approach to \COMPANYSERVICE. As a final-year student majoring in Computer Science at Ho Chi Minh University of Technology, I have acquired a strong foundation in software development methods, programming skills and programming language such as C/C++, Java, JavaScript,\dots\ My internship experience at Tego Global.,JSC further honed my skills in Backend Developer, preparing me to contribute effectively to your team. I am eager to apply my academic knowledge and practical experience to help advance \COMPANY's goals.
 
-PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials.
+I would welcome the opportunity to discuss how my background and skills align with the needs of company in greater detail. I am flexible regarding the time and location of an interview and can accommodate your schedule. I will be in company on your specified date, and I would be glad to arrange a meeting at your convenience. Alternatively, I will follow up with you if my profile pass the screening stage to discuss the possibility of setting up an interview. I can be reached at \usekomavar{fromphone}. Thank you for considering my application.
+
+I am looking forward to the possibility of contributing to your team.
 
 Sincerely yours, \\
 \usekomavar{signature} % Automatically output the signature name defined at the start of the template
