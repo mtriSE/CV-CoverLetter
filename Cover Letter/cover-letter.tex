@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stefano Cover Letter
+% LaTeX Template
+% Version 2.0 (February 14, 2023)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Stefano (https://www.kindoblue.nl)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%letterpaper, % Uncomment for US letter paper size
+	parskip=half, % Vertical whitespace between paragraphs
+	%foldmarks=hp, % Uncomment to remove fold marks on the left side of the first page
+	enlargefirstpage=true, % Allow more text on the first page
+]{scrlttr2} % Use the KOMA-Script letter class
+
+\usepackage{fontsize} % Allows changing the default font size to an arbitrary value
+\changefontsize[17pt]{12.5pt} % Change the default font size and baselineskip
+\usepackage{anyfontsize} % Allows font sizes at arbitrary values
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+
+\usepackage{hyperref}
+
+%\pagestyle{empty} % Uncomment this for no footer on the second and onwards pages
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{ebgaramond} % Use the EB Garamond font as the main serif font
+\usepackage{lato} % Use the Lato font as the sans font
+
+\usepackage[letterspace=50]{microtype} % Required for changing letter spacing
+
+\usepackage{fontawesome5} % Allows the use of Font Awesome icons
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\setkomavar{fromname}{Tri Mai-Quoc} % Your name
+\setkomavar{signature}{\textit{Tri}} % Your name as you want it to appear in the signature
+
+\newkomavar{subtitle}\setkomavar{subtitle}{Computer Science Student} % Set the subtitle line for the first page header, leave empty for no subtitle
+
+\setkomavar{fromaddress}{Linh Trung ward.\\Thu Duc City, Ho Chi Minh} % Your address or location
+\setkomavar{fromphone}{\href{tel:+84327204690}{(+84)32 720 4690}} % Your phone number
+\setkomavar{fromemail}{\href{mailto:mtri0162@gmail.com}{mtri0162@gmail.com}} % Your email address
+
+\setkomavar{place}{} % A city or country that's output before the date automatically, add your location here if you want this
+\setkomavar{date}{\today} % Date output above the letter, use \today for today's date or leave this empty for no date
+
+\setkomavar{subject}{Cover Letter for Software Engineering Internship Position} % Bold text above the letter specifying what it's for, useful for specifying the job you are applying for. Leave this empty for no subject.
+
+% These are not used in this document, uncomment them if you would like to use them and output their values with e.g.: \usekomavar{fromurl}
+%\setkomavar{fromfax}{+1 (123) 456 7890} % Your fax number
+%\setkomavar{fromurl}{https://www.LaTeXTemplates.com} % Your personal website
+
+% \setkomavar{toname}{Dr. Robert Kelso}
+% \setkomavar{toposition}{Chief of Medicine}
+% \setkomavar{tocompany}{Sacred Heart Hospital}
+% \setkomavar{tolocation}{12629 Riverside Drive}
+
+%------------------------------------------------
+
+\setkomavar{firsthead}{ % Style the first page header
+	\centering\scshape % Text position and styling
+	{\huge\textls{\usekomavar{fromname}}}\\[4pt] % Your name
+	{\large\usekomavar{subtitle}} % Subtitle
+}
+
+\setplength{firstheadvpos}{0.045\paperheight} % Vertical position of the header on the first page
+
+%------------------------------------------------
+
+\setkomavar{firstfoot}{ % Style the first page footer
+	\centering\scshape\lsstyle% Text position and styling
+	{\renewcommand{\\}{~{\large\textperiodcentered}~}\usekomavar{fromaddress}}\\ % Output the from address where separate lines are replaced with bullet points
+	{\small{\footnotesize\faEnvelope}\hspace{4pt}\usekomavar{fromemail}\hspace{8pt}{\footnotesize\faMobile*}\hspace{4pt}\usekomavar{fromphone}} % Output the email address and phone number, if you want your fax number or website URL showing, add them here in a similar way
+}
+
+\setplength{firstfootvpos}{0.92\paperheight} % Vertical position of the footer on the first page
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{
+	% Name and address of the person to whom the letter is being sent
+        % \usekomavar{toname} \\
+	Dr. Robert Kelso \\
+	Chief of Medicine \\
+	Sacred Heart Hospital \\
+	12629 Riverside Drive \\
+	North Hollywood, L.A. 91607
+        % \usekomavar{toposition} \\
+        % \usekomavar{tocompany} \\
+        % \usekomavar{tolocation}
+}
+
+\opening{Dear Dr. Kelso,}
+
+PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening.
+
+PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services -- above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life.
+
+PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials.
+
+Sincerely yours, \\
+\usekomavar{signature} % Automatically output the signature name defined at the start of the template
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
