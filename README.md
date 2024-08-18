@@ -1,8 +1,11 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 # LaTeX prototype to generate CV and Cover Letter 
 ---
 ## Generate my CV (Academic CV Template):
 ### On VS Code:
-- ==Prerequisite==: you need to do some installation on local, for reference: [How to create and compile latex documents on VS Code?](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
+Prerequisite: you need to do some installation on local, for reference: [How to create and compile latex documents on VS Code?](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
 - Step by step:
     - Clone this repository: `git clone https://github.com/mtriSE/CV-CoverLetter.git`
     - Change the directory: `cd Academic\ CV\ Temlate/`
@@ -20,6 +23,7 @@ The same as generating CV (Academic CV Template), but change the directory to `C
 
 ## Generate my CV (Harvard CV Template):
 The same as generating CV (Academic CV Template), but change the directory to `Harvard CV template` directory and compile the file `ComputerScience.tex`
+
 _==Note==: I have edit the template a lot to fit my purpose (the format, the line spacing,...), so when you generate `.pdf` from this template in my repository, you will get a very different CV as comparison to the original preview_
 
 ---
@@ -43,4 +47,4 @@ _==Note==: I have edit the template a lot to fit my purpose (the format, the lin
 - Overleaf template: [Open in Overleaf](https://www.overleaf.com/latex/templates/cv-harvard-like/mdwdzhtvvbhs)
 - Author: Aline R. Antunes
 - License: LaTeX Project Public License 1.3c
-- Abstract: CV template similar to harvad CV
+- Abstract: CV template similar to Harvard CV
