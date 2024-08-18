@@ -5,7 +5,7 @@
 ---
 ## Generate my CV (Academic CV Template):
 ### On VS Code:
-Prerequisite: you need to do some installation on local, for reference: [How to create and compile latex documents on VS Code?](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
+**Prerequisite**: you need to do some installation on local, for reference: [How to create and compile latex documents on VS Code?](https://dev.to/ucscmozilla/how-to-create-and-compile-latex-documents-on-visual-studio-code-3jbk)
 - Step by step:
     - Clone this repository: `git clone https://github.com/mtriSE/CV-CoverLetter.git`
     - Change the directory: `cd Academic\ CV\ Temlate/`
@@ -24,7 +24,7 @@ The same as generating CV (Academic CV Template), but change the directory to `C
 ## Generate my CV (Harvard CV Template):
 The same as generating CV (Academic CV Template), but change the directory to `Harvard CV template` directory and compile the file `ComputerScience.tex`
 
-_==Note==: I have edit the template a lot to fit my purpose (the format, the line spacing,...), so when you generate `.pdf` from this template in my repository, you will get a very different CV as comparison to the original preview_
+_**Note**: I have edit the template a lot to fit my purpose (the format, the line spacing,...), so when you generate `.pdf` from this template in my repository, you will get a very different CV as comparison to the original preview_
 
 ---
 ## About CV Template
